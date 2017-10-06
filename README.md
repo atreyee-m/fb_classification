@@ -1,6 +1,7 @@
 # To run the code
 
-- run the script final_script.sh
+ - prerequisites - the original train files and all the scripts should be in the same directory
+ - run the script final_script.sh
 
 # What it does:
 
