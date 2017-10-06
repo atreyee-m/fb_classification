@@ -48,9 +48,7 @@ from sklearn.neural_network import MLPClassifier
 url_string = r"(?i)\b((?:https?:(?:/{1,3}|[a-z0-9%])|[a-z0-9.\-]+[.](?:[a-z]{2,13})(?:[^\s()<>{}\[\]]+|\([^\s()]*?\([^\s()]+\)[^\s()]*?\)|\([^\s]+?\))+(?:\([^\s()]*?\([^\s()]+\)[^\s()]*?\)|\([^\s]+?\)|[^\s`!()\[\]{};:'\".,<>?������])|(?:(?<!@)[a-z0-9]+(?:[.\-][a-z0-9]+)*[.](?:[a-z]{2,13})\b/?(?!@))))"
 
 def main():
-    preprocess()
-    #extractFeats()
-    transformTarget()
+    
     classificationTasks()
 
 
@@ -91,6 +89,8 @@ def extractFeats():
      
 def classificationTasks():
     
+    preprocess()
+    transformTarget()
     features = extractFeats()
     target = np.array(newReadFile(open("target_transformed.txt"))).astype(np.int)
     trainfeat_np, testfeat_np, traintarget_np, testtarget_np = train_test_split(features,target, test_size = 0.2, random_state = 0)
