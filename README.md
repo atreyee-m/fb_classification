@@ -1,8 +1,8 @@
-#To run the code
+# To run the code
 
 - run the script final_script.sh
 
-#What it does:
+# What it does:
 
  - It reads from the input file
  - It cleans up the text, e.g., replaces URLs with the word URL. There are other preprocessing steps which could be done such as removal of stop words, lemmatizing, etc. which I have not tried here.
