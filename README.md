@@ -15,7 +15,9 @@
 
 ## Number of Datapoints
 Fake Seller = 9174
+
 Reseller    = 9583
+
 No Seller   = 16425
  
 Thus, the dataset is slightly imbalanced with "no seller" being the majority class.
